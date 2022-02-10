@@ -935,3 +935,102 @@ body {
     text-align: center;
     font-size: 28px;
 }
+
+.bio{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-width: 380px;
+    height: 100%;
+    max-height: 80vh;
+    min-height: inherit;
+    text-align: center;
+    padding: 70px 30px 45px;
+    overflow: auto;
+}
+.header-photo{
+    position: relative;
+    width: 180px;
+    margin: 0 auto 30px;
+    z-index: 1;
+}
+.header-photo:after{
+    position: absolute;
+    opacity: .3;
+    top: 7%;
+    left: 7%;
+    border-radius: 300px;
+    content: '';
+    height: calc(100% + 0px);
+    width: calc(100% + 0px);
+    background-image: -webkit-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    -webkit-background-size: 6px 6px;
+    -moz-background-size: 6px 6px;
+    background-size: 6px 6px;
+    z-index: -1;
+}
+.header-photo img {
+    max-width: 100%;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 300px;
+}
+.header-titles h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #f5f5f5;
+    margin: 5px 0 7px;
+    line-height: 1.2em;
+}
+.header-titles h4 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #bbb;
+    margin: 5px 0;
+    line-height: 1.2em;
+}
+.social-links {
+    margin: 20px 0;
+}
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+.social-links ul li {
+    display: inline-block;
+}
+.social-links ul li a {
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    opacity: .9;
+}
+.header-buttons {
+    margin-top: 50px;
+}
+.cv {
+    background-color: transparent;
+    color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 45px;
+}
+.bio .copyrights {
+    color: #bbb;
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px 15px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+}
